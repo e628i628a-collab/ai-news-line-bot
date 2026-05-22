@@ -11,6 +11,16 @@ if not LINE_CHANNEL_ACCESS_TOKEN:
 
 RSS_URL = "https://techcrunch.com/category/artificial-intelligence/feed/"
 
+LAST_SENT_FILE = "last_sent.txt"
+
+# 前回送信URL読み込み
+sent_urls = set()
+
+if os.path.exists(LAST_SENT_FILE):
+    with open(LAST_SENT_FILE, "r", encoding="utf-8") as f:
+        sent_urls = set(line.strip() for line in f)
+
+# RSS取得
 req = urllib.request.Request(
     RSS_URL,
     headers={"User-Agent": "Mozilla/5.0"}
@@ -22,13 +32,27 @@ with urllib.request.urlopen(req) as response:
 root = ET.fromstring(content)
 items = root.findall(".//item")
 
-message_text = "Latest TechCrunch AI Articles:\n\n"
+new_articles = []
 
-for item in items[:3]:
+for item in items[:5]:
     title = item.find("title").text
     link = item.find("link").text
+
+    if link not in sent_urls:
+        new_articles.append((title, link))
+
+# 新記事なし
+if not new_articles:
+    print("新しい記事なし")
+    exit(0)
+
+# LINEメッセージ作成
+message_text = "New TechCrunch AI Articles:\n\n"
+
+for title, link in new_articles:
     message_text += f"- {title}\n{link}\n\n"
 
+# LINE送信
 LINE_API_URL = "https://api.line.me/v2/bot/message/broadcast"
 
 payload = {
@@ -55,3 +79,8 @@ req = urllib.request.Request(
 with urllib.request.urlopen(req) as response:
     print("LINE送信成功！")
     print(response.read().decode("utf-8"))
+
+# 送信済みURL保存
+with open(LAST_SENT_FILE, "a", encoding="utf-8") as f:
+    for _, link in new_articles:
+        f.write(link + "\n")
