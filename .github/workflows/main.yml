@@ -23,3 +23,14 @@ jobs:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
         run: |
           python techcrunch_ai_line.py
+
+      - name: Commit updated last_sent.txt
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add last_sent.txt
+
+          git diff --cached --quiet || git commit -m "Update last sent articles"
+
+          git push
