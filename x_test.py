@@ -90,7 +90,7 @@ for username, label in ACCOUNTS.items():
 
 {tweet_text}
 
-🔥 Score: {best_score}
+
 
 {tweet_link}
 """
