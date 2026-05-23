@@ -34,7 +34,7 @@ user_id = user_data["data"]["id"]
 print("USER ID:", user_id)
 
 # 最新ポスト取得
-tweet_url = f"https://api.x.com/2/users/{user_id}/tweets?max_results=1"
+tweet_url = f"https://api.x.com/2/users/{user_id}/tweets?max_results=5"
 
 tweet_req = urllib.request.Request(
     tweet_url,
