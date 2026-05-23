@@ -21,8 +21,10 @@ jobs:
       - name: Run BOT
         env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: |
           python techcrunch_ai_line.py
+          python x_test.py
 
       - name: Commit updated last_sent.txt
         run: |
