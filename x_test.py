@@ -14,79 +14,124 @@ if not LINE_CHANNEL_ACCESS_TOKEN:
     print("LINE_CHANNEL_ACCESS_TOKEN が見つかりません")
     exit(1)
 
-USERNAME = "OpenAI"
+# 監視アカウント
+ACCOUNTS = {
+    "OpenAI": "🤖 OpenAI",
+    "GoogleDeepMind": "🧠 DeepMind",
+    "xAI": "🚀 xAI",
+    "huggingface": "🤗 Hugging Face",
+    "cursor_ai": "💻 Cursor"
+}
 
-# OpenAIユーザー取得
-user_url = f"https://api.x.com/2/users/by/username/{USERNAME}"
+results = []
 
-user_req = urllib.request.Request(
-    user_url,
-    headers={
-        "Authorization": f"Bearer {BEARER_TOKEN}"
-    }
-)
+for username, label in ACCOUNTS.items():
 
-with urllib.request.urlopen(user_req) as response:
-    user_data = json.loads(response.read().decode("utf-8"))
+    try:
+        # ユーザー取得
+        user_url = f"https://api.x.com/2/users/by/username/{username}"
 
-user_id = user_data["data"]["id"]
+        user_req = urllib.request.Request(
+            user_url,
+            headers={
+                "Authorization": f"Bearer {BEARER_TOKEN}"
+            }
+        )
 
-print("USER ID:", user_id)
+        with urllib.request.urlopen(user_req) as response:
+            user_data = json.loads(response.read().decode("utf-8"))
 
-# 最新ポスト取得
-tweet_url = f"https://api.x.com/2/users/{user_id}/tweets?max_results=5"
+        user_id = user_data["data"]["id"]
 
-tweet_req = urllib.request.Request(
-    tweet_url,
-    headers={
-        "Authorization": f"Bearer {BEARER_TOKEN}"
-    }
-)
+        # 投稿取得
+        tweet_url = (
+            f"https://api.x.com/2/users/{user_id}/tweets"
+            f"?max_results=5"
+            f"&tweet.fields=public_metrics"
+        )
 
-with urllib.request.urlopen(tweet_req) as response:
-    tweet_data = json.loads(response.read().decode("utf-8"))
+        tweet_req = urllib.request.Request(
+            tweet_url,
+            headers={
+                "Authorization": f"Bearer {BEARER_TOKEN}"
+            }
+        )
 
-latest_tweet = tweet_data["data"][0]
+        with urllib.request.urlopen(tweet_req) as response:
+            tweet_data = json.loads(response.read().decode("utf-8"))
 
-tweet_text = latest_tweet["text"]
-tweet_id = latest_tweet["id"]
+        best_tweet = None
+        best_score = -1
 
-tweet_link = f"https://x.com/{USERNAME}/status/{tweet_id}"
+        for tweet in tweet_data["data"]:
 
-# LINE送信用メッセージ
-message_text = f"""🔥 OpenAI Latest Post
+            metrics = tweet["public_metrics"]
+
+            score = (
+                metrics.get("like_count", 0)
+                + metrics.get("retweet_count", 0) * 2
+                + metrics.get("reply_count", 0)
+                + metrics.get("quote_count", 0) * 2
+            )
+
+            if score > best_score:
+                best_score = score
+                best_tweet = tweet
+
+        if best_tweet:
+
+            tweet_text = best_tweet["text"]
+            tweet_id = best_tweet["id"]
+
+            tweet_link = f"https://x.com/{username}/status/{tweet_id}"
+
+            results.append(
+                f"""{label}
 
 {tweet_text}
 
+🔥 Score: {best_score}
+
 {tweet_link}
 """
+            )
 
-print(message_text)
+    except Exception as e:
+        print(f"{username} エラー:", e)
 
 # LINE送信
-LINE_API_URL = "https://api.line.me/v2/bot/message/broadcast"
+if results:
 
-payload = {
-    "messages": [
-        {
-            "type": "text",
-            "text": message_text
-        }
-    ]
-}
+    message_text = "🔥 Trending AI X Posts\n\n"
 
-headers = {
-    "Content-Type": "application/json",
-    "Authorization": f"Bearer {LINE_CHANNEL_ACCESS_TOKEN}"
-}
+    message_text += "\n-------------------\n\n".join(results)
 
-line_req = urllib.request.Request(
-    LINE_API_URL,
-    data=json.dumps(payload).encode("utf-8"),
-    headers=headers,
-    method="POST"
-)
+    LINE_API_URL = "https://api.line.me/v2/bot/message/broadcast"
 
-with urllib.request.urlopen(line_req) as response:
-    print("LINE送信成功！")
-    print(response.read().decode("utf-8"))
+    payload = {
+        "messages": [
+            {
+                "type": "text",
+                "text": message_text[:5000]
+            }
+        ]
+    }
+
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {LINE_CHANNEL_ACCESS_TOKEN}"
+    }
+
+    line_req = urllib.request.Request(
+        LINE_API_URL,
+        data=json.dumps(payload).encode("utf-8"),
+        headers=headers,
+        method="POST"
+    )
+
+    with urllib.request.urlopen(line_req) as response:
+        print("LINE送信成功！")
+        print(response.read().decode("utf-8"))
+
+else:
+    print("送信する投稿なし")
