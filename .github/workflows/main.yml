@@ -36,3 +36,4 @@ jobs:
           git diff --cached --quiet || git commit -m "Update last sent articles"
 
           git push
+
