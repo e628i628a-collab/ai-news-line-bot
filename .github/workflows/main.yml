@@ -2,8 +2,9 @@ name: AI News LINE BOT
 
 on:
   schedule:
-    - cron: '0 2 * * *'
-  workflow_dispatch:
+    # UTCの 23:07 （日本時間の午前 8:07）
+    # 混雑（0分）を避けるために7分にズラしています
+    - cron: '7 23 * * *'
 
 jobs:
   run-bot:
