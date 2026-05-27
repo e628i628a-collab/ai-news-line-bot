@@ -4,7 +4,7 @@ on:
   schedule:
     # UTCの 23:07（日本時間の午前8:07）
     # 混雑しやすい0分を避けるため、7分にずらしています
-    - cron: '7 23 * * *'
+    - cron: '7 11 * * *'
   workflow_dispatch:
 
 jobs:
