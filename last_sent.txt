@@ -36,3 +36,8 @@ https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion
 https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/
 https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/
 https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/
+https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/
+https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/
+https://techcrunch.com/2026/06/01/water-access-is-now-a-risk-factor-in-spacexs-ipo/
+https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/
+https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/
