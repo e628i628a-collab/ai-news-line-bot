@@ -77,3 +77,8 @@ https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-pow
 https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/
 https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams/
 https://techcrunch.com/2026/06/09/lovable-says-it-has-hit-500m-in-annualized-revenue-with-1-million-new-projects-a-week/
+https://techcrunch.com/2026/06/10/ai-pilled-firms-spend-7500-per-employee-each-month-on-ai/
+https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse/
+https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/
+https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/
+https://techcrunch.com/2026/06/10/the-three-hard-tech-moonshots-fueling-spacexs-unbelievable-ipo/
