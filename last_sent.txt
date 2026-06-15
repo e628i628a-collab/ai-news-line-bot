@@ -102,3 +102,8 @@ https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-
 https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/
 https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/
 https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/
+https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/
+https://techcrunch.com/2026/06/15/spacex-is-public-everything-you-need-to-know-post-ipo/
+https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/
+https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/
+https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/
