@@ -232,3 +232,8 @@ https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-t
 https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/
 https://techcrunch.com/2026/07/15/spacex-falls-to-135-ipo-price-ahead-of-starship-launch/
 https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/
+https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/
+https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/
+https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/
+https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/
+https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/
