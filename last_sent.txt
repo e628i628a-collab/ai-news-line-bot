@@ -283,3 +283,8 @@ https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose
 https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/
 https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/
 https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/
+https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it/
+https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/
+https://techcrunch.com/2026/07/28/bot-detection-startup-spur-nabs-200m-from-insight/
+https://techcrunch.com/2026/07/28/mcp-startup-runlayer-accuses-rippling-of-stealing-its-product-idea/
+https://techcrunch.com/2026/07/28/sam-altman-is-ready-to-decelerate/
