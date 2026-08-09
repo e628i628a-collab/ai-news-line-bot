@@ -334,3 +334,5 @@ https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-i
 https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/
 https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/
 https://techcrunch.com/podcast/jill-lepore-on-the-artificial-state-and-why-silicon-valleys-leaders-are-bad-sci-fi-readers/
+https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/
+https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/
