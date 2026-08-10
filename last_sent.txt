@@ -336,3 +336,7 @@ https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-fas
 https://techcrunch.com/podcast/jill-lepore-on-the-artificial-state-and-why-silicon-valleys-leaders-are-bad-sci-fi-readers/
 https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/
 https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/
+https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/
+https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/
+https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/
+https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/
