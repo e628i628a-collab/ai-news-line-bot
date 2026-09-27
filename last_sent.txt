@@ -552,3 +552,5 @@ https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-wer
 https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/
 https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/
 https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/
+https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/
+https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/
