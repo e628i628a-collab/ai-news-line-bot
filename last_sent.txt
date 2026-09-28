@@ -554,3 +554,8 @@ https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-
 https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/
 https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/
 https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/
+https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/
+https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/
+https://techcrunch.com/2026/09/28/google-is-killing-off-geminis-gems-in-favor-of-skills/
+https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/
+https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/
