@@ -587,3 +587,8 @@ https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-acce
 https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/
 https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/
 https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/
+https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/
+https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/
+https://techcrunch.com/2026/10/06/libreoffice-says-no-ai-is-now-a-software-feature/
+https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/
+https://techcrunch.com/2026/10/06/pinterests-ai-now-turns-beauty-pins-into-action-plans/
