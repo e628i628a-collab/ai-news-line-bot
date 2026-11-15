@@ -775,3 +775,6 @@ https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-h
 https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/
 https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/
 https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/
+https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/
+https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/
+https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/
